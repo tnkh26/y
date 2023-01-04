@@ -1,0 +1,14 @@
+<div class='container'>
+  
+  <div class='row'>
+    
+    <div class="col-sm-12 mx-auto">
+  		<h1>Editing Book</h1>
+    	<%= render 'layouts/errors', obj: @book %>
+  		<%= render 'input', book: @book %>
+  		<%= link_to 'Show', @book, class: "book_#{@book.id}" %> |
+  		<%= link_to 'Back', books_path, class: "back" %>
+  		
+  </div>
+  
+</div>
